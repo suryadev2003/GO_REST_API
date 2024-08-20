@@ -1,0 +1,9 @@
+{"message":"User registered successfully"}
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQxMjQ4NDEsInN1YiI6InN1cnlhIn0.qTuvKg_3bL-GPA_csqe668klNmE1mmCt-3eGa1UdjIM"}
+{"id":0,"name":"Bottle Kumar","created_by":"surya","created_on":"2024-08-19T09:04:34.8961516+05:30","updated_by":{"String":"","Valid":false},"updated_on":{"Time":"0001-01-01T00:00:00Z","Valid":false}}
+{"id":3,"name":"Bottle Kumari","created_by":"","created_on":"0001-01-01T00:00:00Z","updated_by":{"String":"surya","Valid":true},"updated_on":{"Time":"2024-08-19T09:05:48.2793296+05:30","Valid":true}}
+{"created_by":"surya","created_on":"2024-08-19T03:34:35Z","id":3,"name":"Bottle Kumari","updated_by":"surya","updated_on":"2024-08-19T03:35:48Z"}
+{"message":"Student with this ID not present"}
+{"message":"Student deleted successfully"}
+{"message":"User registered successfully"}
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjQxMjY4MTIsInN1YiI6InNoaWtoYSJ9.ptKz7SfY3iobOFMZRFNH0fAlX6yn_bA5yqIEPoT-nfQ"}

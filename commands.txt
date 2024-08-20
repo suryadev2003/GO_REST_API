@@ -1,0 +1,22 @@
+
+
+// REGISTER
+curl -X POST http://localhost:8080/register ^ -H "Content-Type: application/json" ^ -d "{\"UserID\": \"satyam\", \"Password\": \"def\"}"    
+
+
+// login
+curl -X POST http://localhost:8080/login ^ -H "Content-Type: application/json" ^ -d "{\"UserID\": \"satyam\", \"Password\": \"def\"}"                                                                                                        
+
+// create                                                                                               
+curl -X POST http://localhost:8080/students/create -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjM5NzU1MDksInN1YiI6InN1cnlhIn0.eG1_J1NKQkrEoJGjEmN8OTBfcoWw2wJ-OYFMwtZ7ga0" -H "Content-Type: application/json" -d "{\"name\": \"William Butcher\"}"
+
+// UPDATE
+curl -X PUT http://localhost:8080/students/6 ^ -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjM4OTQyOTMsInN1YiI6IlJPQiJ9.ZTLLOIQ_LLlZKQfX-F3YN3HmXyNALpIg5-rLo1rWseY" ^ -H "Content-Type: application/json" ^ -d "{\"name\": \"Hanuman Kumar\"}"
+
+
+// GET by UserID
+curl -X GET http://localhost:8080/students/6 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjM4OTQyOTMsInN1YiI6IlJPQiJ9.ZTLLOIQ_LLlZKQfX-F3YN3HmXyNALpIg5-rLo1rWseY"
+
+
+// Delete by UserID
+curl -X DELETE http://localhost:8080/students/2 ^ -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjM4OTQyOTMsInN1YiI6IlJPQiJ9.ZTLLOIQ_LLlZKQfX-F3YN3HmXyNALpIg5-rLo1rWseY"

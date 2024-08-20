@@ -1,0 +1,14 @@
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    created_by VARCHAR(100) NOT NULL,
+    created_on DATETIME NOT NULL,
+    updated_by VARCHAR(100),
+    updated_on DATETIME
+);
+
+CREATE TABLE `users` (
+  `UserID` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

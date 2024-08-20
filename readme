@@ -1,0 +1,29 @@
+1. (config.go): In config.go file i am accessing the configuration of the Database and the port number. 
+The default configuration will be accessed from the (config.yaml) file, and if you want to override the details , it can be done in the (.env) file. After accessing the details of the database, i am loading the config file, here i am using viper library for the configuration. It can be done with some different method also.
+
+2. (api.log): In the api.log file, there is schema of two tables which are being used here (user(ADMIN) and the student).
+
+3. (Models): The models folder has two files (student.go and user.go), user.go defines the model of the user that consist of userId and password, similarly in the student.go file (ID, Name, CreatedBy, CreatedOn, UpdatedBy, UpdatedOn)
+
+4. (middleware) : The middleware is used for HTTP request and respone, here with the help of jwt token, we authorize the user and then passing the UserId through a context which is then used in controllers.
+
+5. (controllers): controllers folder consist of two files (auth_controller and student_controller)
+--> in auth_controller, the logic for registering the user as well as login in the user is written, the authorization of login in a user is done by generating a jwt token, which is different for different users.
+--> in student_controller, the crud operations are performed and a userId through a context is passed to authorize the user for creating a student.
+All the logs are printed in output.txt file.
+
+6. (routes): In the routes folder, i have two files (one for users and other for students). Here i am using gorilla mux as well as negroni library to write clean code and to improve the debugging of the code and for better control of http endpoints.
+
+7. (databse.go): For the database, i am using mysql database and in the database.go file the configuration is done with the help of config.go file.
+
+8. (main.go): In main.go, i have initialized the methods, like database and negroni library by creating new instance of negroni and creating instance for gorilla mux, routes are also called in main.go file.
+
+9. go.mod and go.sum : go.mod is used to provide the information about the library used in the project.
+
+
+// Steps to run the project 
+--> The first step will be to change the .env, there make the changes according to the details of your database like root,admin,password and other things.
+--> Now create two tables, Student and the Users table which is there in api.log file
+--> Use the go mod tidy to install the libraries which are used.
+--> In the command.txt file all the commands are written which are to be followed to run the project.(At first User should Register, -->After the registration login the user, when login is done you will receive a token and with the help of the token CRUD operations can be performed)
+-->The output of each command can be seen in the output.txt file

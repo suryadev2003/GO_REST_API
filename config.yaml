@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+database:
+  user: "root"
+  password: "@Surya123"
+  name: "rest_api"
+  host: "localhost"
+  port: 3306
+
+jwt:
+  secret: "your_token"
+  expiration: "24h"
